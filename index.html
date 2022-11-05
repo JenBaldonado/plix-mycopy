@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Plix</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top px-2">
+            <div class="container-fluid">
+                <a class="navbar-brand  active" aria-current="page" href="index.html">PLIX</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="popular.html">Popular Movies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="drama.html">Best Drama</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="theater.html">Available in Theathers</a>
+                        </li>
+                    </ul>
+                    <form action="" id="form" class="d-flex">
+                        <input type="text" id="search" class="search me-2" placeholder="Search">
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-------------------------------------- TRAILER--------------------------------->
+    <div class="m-5 fontwhite">
+        <h2>Latest Trailers</h2>
+    </div>
+    <div class="slide-container swiper">
+        <div class="slide-content">
+            <div class="card-wrapper swiper-wrapper">
+                <div class="card swiper-slide">
+                    <a data-bs-toggle="modal" data-bs-target="#trailerOne">
+                        <div class="trailer-item">
+                            <img class="trailer-img" src="assets/Monster-High.jpg" alt="Monster High The Movie Poster">
+                            <h4 class="text-center py-2">Monster High</h4>
+                            <div class="trailer-overlay">
+                                <span class="material-symbols-outlined">
+                                    play_circle
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card swiper-slide">
+                    <a data-bs-toggle="modal" data-bs-target="#trailerTwo">
+                        <div class="trailer-item">
+                            <img class="trailer-img" src="assets/Mr_Harrigan.jpg" alt="Mr. Harrigan's Phone Poster">
+                            <h4 class="text-center py-2">Mr. Harrigan's Phone</h4>
+                            <div class="trailer-overlay">
+                                <span class="material-symbols-outlined">
+                                    play_circle
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card swiper-slide">
+                    <a data-bs-toggle="modal" data-bs-target="#trailerThree">
+                        <div class="trailer-item">
+                            <img class="trailer-img" src="assets/Black_Adam.jpg" alt="Black Adam Poster">
+                            <h4 class="text-center py-2">Black Adam</h4>
+                            <div class="trailer-overlay">
+                                <span class="material-symbols-outlined">
+                                    play_circle
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card swiper-slide">
+                    <a data-bs-toggle="modal" data-bs-target="#trailerFour">
+                        <div class="trailer-item">
+                            <img class="trailer-img" src="assets/Halloween_ends.jpg" alt="Halloween Ends Poster">
+                            <h4 class="text-center py-2">Halloween Ends</h4>
+                            <div class="trailer-overlay">
+                                <span class="material-symbols-outlined">
+                                    play_circle
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="card swiper-slide">
+                    <a data-bs-toggle="modal" data-bs-target="#trailerFive">
+                        <div class="trailer-item">
+                            <img class="trailer-img" src="assets/Old_People.jpg" alt="Old People Poster">
+                            <h4 class="text-center py-2">Old People</h4>
+                            <div class="trailer-overlay">
+                                <span class="material-symbols-outlined">
+                                    play_circle
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card swiper-slide">
+                    <a data-bs-toggle="modal" data-bs-target="#trailerSix">
+                        <div class="trailer-item">
+                            <img class="trailer-img" src="assets/Mermaid_Power.jpg" alt="">
+                            <h4 class="text-center py-2">Barbie: Mermaid Power</h4>
+                            <div class="trailer-overlay">
+                                <span class="material-symbols-outlined">
+                                    play_circle
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="card swiper-slide">
+                    <a data-bs-toggle="modal" data-bs-target="#trailerSeven">
+                        <div class="trailer-item">
+                            <img class="trailer-img" src="assets/The_Redeem_Team.jpg" alt="The Redeem Team Poster">
+                            <h4 class="text-center py-2">The Redeem Team</h4>
+                            <div class="trailer-overlay">
+                                <span class="material-symbols-outlined">
+                                    play_circle
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card swiper-slide">
+                    <a data-bs-toggle="modal" data-bs-target="#trailerEight">
+                        <div class="trailer-item">
+                            <img class="trailer-img" src="assets/Wakanda_Forever.jpg" alt="Wakanda_Forever">
+                            <h4 class="text-center py-2">Wakanda Forever</h4>
+                            <div class="trailer-overlay">
+                                <span class="material-symbols-outlined">
+                                    play_circle
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card swiper-slide">
+                    <a data-bs-toggle="modal" data-bs-target="#trailerNine">
+                        <div class="trailer-item">
+                            <img class="trailer-img" src="assets/enola-holmes.jpg" alt="enola-holmes">
+                            <h4 class="text-center py-2">Wakanda Forever</h4>
+                            <div class="trailer-overlay">
+                                <span class="material-symbols-outlined">
+                                    play_circle
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+
+    <!---------------------------------------- MODALS ---------------------------------->
+    <div class="trailer">
+        <div class="modal" tabindex=" -1" id="trailerOne" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div id="video" class="modal-content p-2">
+                    <div class="modal-body text-center">
+                        <iframe class="w-100"
+                            src="https://www.youtube.com/embed/Ghz0V5LegzI?mute=1&rel=0&modestbranding=1"
+                            title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="trailer">
+        <div class="modal" tabindex=" -1" id="trailerTwo" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div id="video" class="modal-content p-2">
+                    <div class="modal-body">
+                        <iframe class="w-100" height="500"
+                            src="https://www.youtube.com/embed/4Un_ker71dg?mute=1&rel=0&modestbranding=1"
+                            title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="trailer">
+            <div class="modal" tabindex=" -1" id="trailerThree">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div id="video" class="modal-content p-2">
+                        <div class="modal-body">
+                            <iframe class="w-100" height="500"
+                                src="https://www.youtube.com/embed/mkomfZHG5q4?mute=1&rel=0&modestbranding=1"
+                                title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="trailer">
+        <div class="modal" tabindex=" -1" id="trailerFour">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div id="video" class="modal-content p-2">
+                    <div class="modal-body">
+                        <iframe class="w-100" height="500"
+                            src="https://www.youtube.com/embed/s0vtbxLa-N8?mute=1&rel=0&modestbranding=1"
+                            title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="trailer">
+        <div class="modal" tabindex=" -1" id="trailerFive">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div id="video" class="modal-content p-2">
+                    <div class="modal-body">
+                        <iframe class="w-100" height="500"
+                            src="https://www.youtube.com/embed/8gnxYa9M41c?mute=1&rel=0&modestbranding=1"
+                            title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="trailer">
+        <div class="modal" tabindex=" -1" id="trailerSix">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div id="video" class="modal-content p-2">
+                    <div class="modal-body">
+                        <iframe class="w-100" height="500"
+                            src="https://www.youtube.com/embed/4WJge5gXjfk?mute=1&rel=0&modestbranding=1"
+                            title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="modal" tabindex=" -1">
+            <iframe title="trailer" src="https://www.youtube.com/embed/tgbNymZ7vqY?mute=1&rel=0&modestbranding=1">
+            </iframe>
+        </div>
+    </div>
+    </div>
+    <div class="trailer">
+        <div class="modal" tabindex=" -1" id="trailerSeven">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div id="video" class="modal-content p-2">
+                    <div class="modal-body">
+                        <iframe class="w-100" height="500"
+                            src="https://www.youtube.com/embed/UMmfRJdPPoE?mute=1&rel=0&modestbranding=1"
+                            title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="trailer">
+        <div class="modal" tabindex=" -1" id="trailerEight">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div id="video" class="modal-content p-2">
+                    <div class="modal-body">
+                        <iframe class="w-100" height="500"
+                            src="https://www.youtube.com/embed/_Z3QKkl1WyM?mute=1&rel=0&modestbranding=1"
+                            title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="trailer">
+        <div class="modal" tabindex=" -1" id="trailerNine">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div id="video" class="modal-content p-2">
+                    <div class="modal-body">
+                        <iframe class="w-100" height="500"
+                            src="https://www.youtube.com/embed/KKXNmYoPkx0?mute=1&rel=0&modestbranding=1"
+                            title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="m-5 fontwhite">
+        <h2>Trending this Week</h2>
+    </div>
+
+    <main id="trends" class="container-fluid justify-content-center pb-5">
+    </main>
+
+    <footer>
+        <a href="about.html">About Plix</a>
+    </footer>
+
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js'></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

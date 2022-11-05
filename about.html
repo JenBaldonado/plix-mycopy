@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+
+</head>
+
+<body>
+
+</body>
+
+</html>
+<style>
+    :root {
+        --primary-color: #1d2228;
+        --secondary-color: #fb8122;
+    }
+
+    html,
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+        background-color: var(--primary-color);
+        max-height: 100%;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--secondary-color);
+        /* background: linear-gradient(grey, orange, grey); */
+        text-align: justify;
+        margin: 50px auto;
+    }
+
+    h1,
+    h2,
+    h3 {
+        text-align: center;
+        justify-content: center;
+    }
+
+    img {
+        object-fit: cover;
+        width: 18.75rem;
+        height: 18.75rem;
+        border-radius: 5px;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        max-width: 1400px;
+        gap: 2.3125rem;
+        margin: 3.125rem auto;
+    }
+
+    .flip-card {
+        background-color: transparent;
+        width: 300px;
+        height: 300px;
+        perspective: 1000px;
+    }
+
+    .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+    .flip-card-front {
+        background-color: #bbb;
+        color: black;
+        border-radius: 5px;
+    }
+
+    .flip-card-back {
+        background-color: var(--secondary-color);
+        color: black;
+        transform: rotateY(180deg);
+        border-radius: 5px;
+    }
+
+    .button {
+        background-color: var(--primary-color);
+        border: 2px solid var(--secondary-color);
+        border-radius: 50px;
+        font-family: inherit;
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+        display: flex;
+        color: var(--secondary-color) !important;
+    }
+
+    .button-container {
+        margin: auto 3.125rem;
+        justify-content: center;
+        display: flex;
+    }
+
+    .aboutThis {
+        margin-top: 1rem;
+    }
+</style>
+</head>
+
+<body>
+
+    <h1>The Team Who Made This Possible</h1>
+    <!-- <h3>Get to know them</h3> -->
+
+    <div class="card-container">
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="assets/abner2.jpg" alt="Abner">
+                </div>
+                <div class="flip-card-back">
+                    <h1>Abner Nercua</h1>
+                    <p>Team Lead</p>
+                    <p>We call him the JS man. He was the one in-charge in all of the js commands.</p>
+                    <a href="https://www.facebook.com/beboy.abner" target="_blank" class="btn contact-details"><i
+                            class="fab fa-facebook-square"></i></a>
+
+                    <a href="https://www.linkedin.com/in/abner-emmanuel-nercua-383114249" target="_blank"
+                        class="btn contact-details"><i class="fab fa-linkedin"></i></a>
+
+                    <a id="profile-link" href="https://github.com/DaisyPas" target="_blank"
+                        class="btn contact-details"><i class="fab fa-github"></i></a>
+
+                    <a href="mailto:abneremmanuel@gmail.com?subject=Hi%20I%20Saw%20Your%20Website%20Plix"
+                        class="btn contact-details"><i class="fas fa-at"></i></a>
+                    <a href="tel:+639357506554" class="btn contact-details"><i class="fas fa-mobile-alt"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="assets/adrian4.jpg" alt="Cyan">
+                </div>
+                <div class="flip-card-back">
+                    <h1>Adrian Tiu Badana</h1>
+                    <p>He polished the design.</p>
+                    <p>click the links to contact him</p>
+                    <a href="https://www.facebook.com/profile.php?id=100009886266148" target="_blank"
+                        class="btn contact-details"><i class="fab fa-facebook-square"></i></a>
+
+                    <a id="profile-link" href="https://github.com/adriantb21" target="_blank"
+                        class="btn contact-details"><i class="fab fa-github"></i></a>
+
+                    <a href="mailto:adriantb021@gmail.com?subject=Hi%20I%20Saw%20Your%20Website%20Plix"
+                        class="btn contact-details"><i class="fas fa-at"></i></a>
+                    <a href="tel:+639264410262" class="btn contact-details"><i class="fas fa-mobile-alt"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="assets/jenifer.jpg" alt="Jenifer">
+                </div>
+                <div class="flip-card-back">
+                    <h1>Jenifer Baldonado</h1>
+                    <p>She was the one who made the API's and Abner's partner in making completing the Javascript of
+                        this project</p>
+                    <p>Connect with her through her links!</p>
+                    <a href="https://www.facebook.com/jenzkie0805" target="_blank" class="btn contact-details"><i
+                            class="fab fa-facebook-square"></i></a>
+
+                    <a href="https://www.linkedin.com/in/jenifer-baldonado-a64426181/" target="_blank"
+                        class="btn contact-details"><i class="fab fa-linkedin"></i></a>
+
+                    <a id="profile-link" href="https://github.com/JenBaldonado" target="_blank"
+                        class="btn contact-details"><i class="fab fa-github"></i></a>
+
+                    <a href="mailto:spotyy0326@gmail.com?subject=Hi%20I%20Saw%20Your%20Website%20Plix"
+                        class="btn contact-details"><i class="fas fa-at"></i></a>
+                    <a href="tel:+639163971282" class="btn contact-details"><i class="fas fa-mobile-alt"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="assets/daisy.jpg" alt="Daisy">
+                </div>
+                <div class="flip-card-back">
+                    <h1>Daisy Pasobillo</h1>
+                    <p>made the initial HTML and CSS of the main and about page</p>
+                    <p>Reach her through her links!</p>
+                    <a href="https://www.facebook.com/pasobillo.daisy" target="_blank" class="btn contact-details"><i
+                            class="fab fa-facebook-square"></i></a>
+
+                    <a href="https://www.linkedin.com/in/daisypasobillo/" target="_blank" class="btn contact-details"><i
+                            class="fab fa-linkedin"></i></a>
+
+                    <a id="profile-link" href="https://github.com/DaisyPas" target="_blank"
+                        class="btn contact-details"><i class="fab fa-github"></i></a>
+
+                    <a href="mailto:dhekjeck@gmail.com?subject=Portfolio%20Site%20Email" class="btn contact-details"><i
+                            class="fas fa-at"></i></a>
+                    <a href="tel:+639364474742" class="btn contact-details"><i class="fas fa-mobile-alt"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    </div>
+    <div class="aboutThis">
+        <h2>About this site</h2>
+        <p>PLIX, from the Filipino words "Pili" and "Pelikula" combined, is a mini project presented by a small team of
+            aspiring team of web developers. </p>
+        <p>Plix is a tool that helps its users to search different genres of movies according to their preference.</p>
+        <p>Plix does not support piracy. It is not a free streaming site.</p>
+    </div>
+    <div class="button-container">
+        <a title="home" class="button" href="index.html">Go to Home</a>
+    </div>
+
+
+
+
+</body>
+
+</html>
