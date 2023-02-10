@@ -1,6 +1,4 @@
-﻿## plix-mycopy
- 
-<hr/>
+﻿## Plix Movie Info App
 
 live link: https://wd16p-plix.netlify.app/
 
