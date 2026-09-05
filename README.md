@@ -1,6 +1,6 @@
 ﻿## Plix Movie Info App
 
-live link: https://wd16p-plix.netlify.app/
+live link: https://plix-movie.netlify.app/
 
 ## About the project
 

@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles/style.css" />
+    <title>Plix &mdash; Find your next movie</title>
+    <meta
+      name="description"
+      content="Find your next movie. Explore trending films, discover favorites, and watch trailers with Plix."
+    />
+    <title>Plix &mdash; Find your next movie</title>
+    <meta name="application-name" content="Plix" />
+    <meta name="theme-color" content="#101318" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Production URL from the project README. Update if the domain changes. -->
+    <link rel="canonical" href="https://plix-movie.netlify.app/" />
+
+    <!-- Open Graph previews -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Plix" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="Plix &mdash; Find your next movie" />
+    <meta
+      property="og:description"
+      content="Find your next movie. Explore trending films, discover favorites, and watch trailers with Plix."
+    />
+    <meta property="og:url" content="https://plix-movie.netlify.app/" />
+
+    <!-- X / Twitter previews -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Plix &mdash; Find your next movie" />
+    <meta
+      name="twitter:description"
+      content="Find your next movie. Explore trending films, discover favorites, and watch trailers with Plix."
+    />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="./src/styles/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#movies">Skip to movies</a>
+    <header class="site-header"></header>
+    <main>
+      <section class="hero" id="featured-hero" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <p class="eyebrow">Your next movie starts here</p>
+          <h1 id="hero-title" data-hero-title>Discover something great.</h1>
+          <p class="metadata">
+            <span data-hero-year></span><span data-hero-rating></span>
+          </p>
+          <p class="synopsis" data-hero-overview>
+            Explore this week's trending movies and find your next favorite.
+          </p>
+          <div class="hero-actions" hidden>
+            <button
+              class="button button-primary"
+              type="button"
+              data-trailer-id=""
+              data-movie-title=""
+            >
+              <span aria-hidden="true">&#9654;</span> Watch Trailer
+            </button>
+            <button
+              class="button button-secondary"
+              type="button"
+              data-more-info-id=""
+            >
+              More Info
+            </button>
+          </div>
+        </div>
+      </section>
+      <div class="content-shell">
+        <section
+          class="movie-section"
+          id="movies"
+          aria-labelledby="movies-heading"
+        >
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Find your next favorite</p>
+              <h2 id="movies-heading">Trending This Week</h2>
+            </div>
+            <span
+              id="movie-count"
+              class="result-count"
+              aria-live="polite"
+            ></span>
+          </div>
+          <div class="movie-grid" id="trending-grid" aria-busy="true">
+            <p class="status-message" role="status">Loading movies...</p>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <a class="logo" href="#trending">PLIX<span>.</span></a>
+      <p>Discover movies. Watch trailers. Find your next favorite.</p>
+      <p>
+        Movie data provided by TMDB. This product is not endorsed or certified
+        by TMDB.
+      </p>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
