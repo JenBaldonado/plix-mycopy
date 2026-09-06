@@ -403,6 +403,16 @@ img {
   color: white;
   transition: background 160ms ease;
 }
+
+.card-play svg {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .card-play:hover,
 .card-play:focus-visible {
   background: var(--accent);
@@ -503,15 +513,26 @@ img {
   overflow-wrap: anywhere;
 }
 .modal-close {
-  flex-shrink: 0;
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
   padding: 0;
-  border: 1px solid var(--border);
+  display: grid;
+  place-items: center;
+
+  color: #dce3ec;
+  background: #202731;
+  border: 1px solid #46505e;
   border-radius: 50%;
-  background: var(--surface-light);
-  color: var(--text);
-  font-size: 1.7rem;
+  cursor: pointer;
+}
+
+.modal-close svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.5;
+  stroke-linecap: round;
 }
 .modal-body iframe {
   display: block;

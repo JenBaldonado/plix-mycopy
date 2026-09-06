@@ -8,7 +8,11 @@ export function createMovieCard(movie) {
   article.innerHTML = `
     <div class="poster">
       <img alt="" loading="lazy" width="500" height="750">
-      <button class="card-play" type="button"><span aria-hidden="true">&#9654;</span></button>
+      <button class="card-play icon-button" type="button">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M8 5.5L18 12L8 18.5Z" fill="currentColor"/>
+        </svg>
+      </button>
     </div>
     <div class="card-details">
       <h3><button class="movie-title" type="button"></button></h3>
